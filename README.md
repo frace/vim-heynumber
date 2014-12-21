@@ -2,8 +2,8 @@
 [vim-heynumber][what-vim-heynumber] is a plugin for the Vim editor.
 It enables `number` and `relativenumber` inside buffers where I really need it and switches
 its behaviour in insert (nu/nornu) and normal (nu/rnu) modes.
-Additionaly it disables (nonu/nornu) linenumbers inside empty buffers and enables them as soon as the
-buffer isn't empty anymore.
+Additionally it disables (nonu/nornu) linenumbers inside empty buffers and enables them dynamically
+as soon as the buffer isn't empty anymore.
 
 [what-vim-heynumber]:https://github.com/frace/vim-heynumber
 
@@ -30,5 +30,5 @@ You are welcome to report bugs at the [project bugtracker][bugs-tracker] at gith
 + [vim-numbertoggle plugin][related-1]
 + [numbers.vim plugin][related-2]
 
-[related-1]: https://github.com/frace/vim-heynumber/issues
-[related-2]: https://github.com/frace/vim-heynumber/issues
+[related-1]: https://github.com/jeffkreeftmeijer/vim-numbertoggle
+[related-2]: https://github.com/myusuf3/numbers.vim
