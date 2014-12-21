@@ -3,8 +3,6 @@
 " Url: https://github.com/frace/vim-heynumber
 " Description: Smart linenumber toggling
 
-" Hide or change numbers on lost focus?
-
 if exists('g:loaded_heynumber')
     finish
 endif
