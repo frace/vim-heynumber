@@ -1,16 +1,16 @@
-" File: vim-nonumbers.vim
+" File: vim-heynumber.vim
 " Author: frace
+" Url: https://github.com/frace/vim-heynumber
 " Description: Smart linenumber toggling
-" Last Modified: Dezember 16, 2014
 
 " Hide or change numbers on lost focus?
 
-if exists('g:loaded_nonumbers')
+if exists('g:loaded_heynumber')
     finish
 endif
 
-let s:plugin_name = 'nonumbers.vim'
-let g:loaded_nonumbers = 1
+let s:plugin_name = 'heynumber.vim'
+let g:loaded_heynumber = 1
 
 if v:version < 703 || &compatible
     echom 'Plugin ' . s:plugin_name . ': ' . 'requires at least Vim 7.3 and :set nocompatible.'
