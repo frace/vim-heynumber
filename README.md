@@ -9,8 +9,8 @@ as soon as the buffer isn't empty anymore.
 
 
 ## Get it!
-If you don't have a preferred installation method, I recommend to use [vim-plug][getit-vimplug].
-Else I'm pretty sure you know how your preferred plugin manager works. ;)
+If you don't use a plugin manager, I recommend to use [vim-plug][getit-vimplug].
+Else I'm pretty sure you know how your personal plugin management works. ;)
 
 [getit-vimplug]: https://github.com/junegunn/vim-plug
 
