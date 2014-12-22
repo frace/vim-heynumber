@@ -1,0 +1,39 @@
+*vim-heynumber.txt*  Makes line numbers appear where I really need them.  
+*vim-heynumber*
+
+Author:  frace <https://github.com/frace/vim-heynumber>
+
+This plugin requires Vim 7.3 or later.
+
+Help on using vim-heynumber                                    *vim-heynumber*
+
+==============================================================================
+TOC                                                            *vim-heynumber*
+
+1. Introduction .......................... |vim-heynumber-intro|
+2. Configuration ......................... |vim-heynumber-configuration|
+3. Credits ............................... |vim-heynumber-credits|
+
+==============================================================================
+1. INTRODUCTION                                          *vim-heynumber-intro*
+
+vim-heynumber enables number and relativenumber inside buffers where I really
+need it and switches its behaviour in insert (nu/nornu) and normal (nu/rnu)
+modes. Additionally it disables (nonu/nornu) linenumbers inside empty buffers
+and enables them dynamically as soon as the buffer isn't empty anymore.
+
+==============================================================================
+2. CONFIGURATION                                 *vim-heynumber-configuration*
+
+Currently neither configuration options are available nor are any additional
+configuration steps to do. Simpy install the plugin and you should be good to
+go.
+
+==============================================================================
+4. CREDITS                                             *vim-heynumber-credits*
+
+This plugin is inspired by related projects:
+- https://github.com/jeffkreeftmeijer/vim-numbertoggle
+- https://github.com/myusuf3/numbers.vim
+
+vim:tw=78:ts=8:ft=help:norl:
