@@ -72,5 +72,6 @@ augroup ManageNumbers
     autocmd!
     autocmd InsertEnter * call s:SetModeFlag('insert',s:BufValid())
     autocmd InsertLeave,BufWinEnter * call s:SetModeFlag('normal',s:BufValid())
-    autocmd BufWinEnter,InsertEnter,InsertLeave,TextChanged,TextChangedI * call s:ManageNumbers(s:BufValid(),s:BufEmpty())
+    \                               | call s:ManageNumbers(s:BufValid(),s:BufEmpty())
+    autocmd InsertEnter,TextChanged,TextChangedI * call s:ManageNumbers(s:BufValid(),s:BufEmpty())
 augroup end
