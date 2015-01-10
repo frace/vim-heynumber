@@ -1,4 +1,4 @@
-# What is it?
+# What is vim-heynumber?
 [vim-heynumber][what-vim-heynumber] is a plugin for the Vim editor.
 It enables `number` and `relativenumber` inside buffers where I really need it and switches
 its behaviour in insert (nu/nornu) and normal (nu/rnu) modes.
