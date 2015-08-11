@@ -37,33 +37,36 @@ function! s:SetModeFlag(mode, buf_valid)
 endfunction
 
 " :help number_relativenumber
+" nonumber & norelativenumber: 0
+" number & norelativenumber: 1
+" number & relativenumber: 2
 function! s:SwitchNumberMode(number_mode)
-    if a:number_mode ==# 'nonu_nornu'
+    if a:number_mode == 0
         let &number = 0
         let &relativenumber = 0
-    elseif a:number_mode ==# 'nu_nornu'
+    elseif a:number_mode == 1
         let &number = 1
         let &relativenumber = 0
-    elseif a:number_mode ==# 'nu_rnu'
+    elseif a:number_mode == 2
         let &number = 1
         let &relativenumber = 1
     else
-        echom "The Yada Yada"
+        echoerr "s:SwitchNumberMode(): Something strange happened!"
     endif
 endfunction
 
 function! s:ManageNumbers(buf_valid, buf_empty)
     if exists('b:current_mode') && b:current_mode
-        call s:SwitchNumberMode('nu_nornu')
+        call s:SwitchNumberMode(1)
     endif
 
     if !exists('b:current_mode') || !b:current_mode
         if !a:buf_empty && !a:buf_valid
-            call s:SwitchNumberMode('nonu_nornu')
+            call s:SwitchNumberMode(0)
         elseif a:buf_empty && a:buf_valid
-            call s:SwitchNumberMode('nonu_nornu')
+            call s:SwitchNumberMode(0)
         elseif !a:buf_empty && a:buf_valid
-            call s:SwitchNumberMode('nu_rnu')
+            call s:SwitchNumberMode(2)
         endif
     endif
 endfunction
